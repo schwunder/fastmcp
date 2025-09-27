@@ -6,10 +6,6 @@ mcp = FastMCP("My MCP Server")
 def greet(name: str) -> str:
     return f"Hello, {name}!"
 
-@mcp.tool
-def greet(name: str) -> str:
-    return f"Hello, {name}!"
-
 # Basic dynamic resource returning a string
 @mcp.resource("resource://greeting")
 def get_greeting() -> str:
